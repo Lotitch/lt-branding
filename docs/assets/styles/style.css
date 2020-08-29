@@ -1,0 +1,56 @@
+/* Old font */
+/* @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap'); */
+
+@font-face {
+	font-family: "Nyala";
+	src: url("../fonts/nyala.ttf");
+}
+
+h1 {
+	font-family: 'Nyala', serif;
+	font-size: 5em;
+	text-align: center;
+	background-position: center;
+
+	margin: 0;
+	padding: 1em 0;
+}
+
+h1#theme1 svg {
+	filter: drop-shadow(0px 0px 3px #768cd4)
+}
+
+h1#theme1 {
+	--ice: #f4f5ff;
+	background-image:
+		radial-gradient(circle farthest-side at center 125px, transparent, var(--ice)),
+		repeating-conic-gradient(transparent 0 9deg, var(--ice) 9deg 18deg),
+		linear-gradient(white, var(--ice));
+	background-color: var(--ice);
+	color: #465091;
+	text-shadow: 0px 0px 4px #768cd4;
+}
+
+h1#theme2 {
+	--brandMain: rgb(204, 152, 103);
+	--brandSecond: rgb(71, 42, 65);
+	background-image:
+		repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px),
+		repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px),
+		linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)),
+		linear-gradient(120deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
+	background-size: 70px 120px;
+	background-color: rgb(71, 42, 65);
+	color: rgb(204, 152, 103);
+}
+
+h1#Thorrace svg {
+	filter: drop-shadow(0px 0px 7px red)
+}
+
+h1#Thorrace {
+	color: rgb(255, 32, 1);
+	text-shadow: 0px 0px 15px #ec0101;
+	background-size: cover;
+	background-image: url('../images/thorrace-bg.png')
+}
